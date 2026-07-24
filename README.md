@@ -76,28 +76,36 @@ Version control: Git & GitHub
 **ScreenShots:**
 
 **Home page/Dashboard**
+
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20204632.png" width="800"/>
 
 **SignUp page**
+
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205038.png" width="800"/>
 
 **Login page**
+
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205112.png" width="800"/>
 
 **Build Profile**
+
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205158.png" width="800"/>
 
 **Explore jobs**
+
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205231.png" width="800"/>
 
 ### **6. Job Details Page**
-<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205305.png" width="800"/>
+
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205302.png" width="800"/>
 
 ### **7. Fit Score Page**
-<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205342.png" width="800"/>
+
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205349.png" width="800"/>
 
 ### **8. Application Tracker**
-<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205410.png" width="800"/>
+
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205435.png" width="800"/>
 
 
 **How to Run This Project Locally**
