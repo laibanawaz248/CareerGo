@@ -74,22 +74,22 @@ Development environment: Visual Studio Code, Vercel CLI (vercel dev) for local t
 Version control: Git & GitHub
 
 **ScreenShots:**
-## **📸 Website Screenshots**
 
+**Home page/Dashboard**
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20204632.png" width="800"/>
-
+**SignUp page**
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205038.png" width="800"/>
-
+**Login page**
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205112.png" width="800"/>
-
+**Build Profile**
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205158.png" width="800"/>
-
+**Explore jobs**
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205231.png" width="800"/>
-
+**Job Description**
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205305.png" width="800"/>
-
+**Fit cover letter**
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205342.png" width="800"/>
-
+**Application tracker**
 <img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205410.png" width="800"/>
 
 
