@@ -74,31 +74,23 @@ Development environment: Visual Studio Code, Vercel CLI (vercel dev) for local t
 Version control: Git & GitHub
 
 **ScreenShots:**
-**Dashboard screenshot / Home Page**
-![Home Page](Screenshots%20of%20website/home.png)
+## **📸 Website Screenshots**
 
- **Sign Up**
-![Sign Up](Screenshots%20of%20website/signup.png)
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20204632.png" width="800"/>
 
- **Login**
-![Login](Screenshots%20of%20website/login.png)
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205038.png" width="800"/>
 
- **Build Profile**
-![Build Profile](Screenshots%20of%20website/profile.png)
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205112.png" width="800"/>
 
- **Explore Jobs**
-![Explore Jobs](Screenshots%20of%20website/explore-jobs.png)
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205158.png" width="800"/>
 
- **Job Details**
-![Job Details](Screenshots%20of%20website/job-details.png)
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205231.png" width="800"/>
 
- **Fit Score & Cover Letter**
-![Fit Score](Screenshots%20of%20website/fit-coverletter.png)
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205305.png" width="800"/>
 
- **Application Tracker**
-![Tracker](Screenshots%20of%20website/tracker.png)
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205342.png" width="800"/>
 
-
+<img src="https://raw.githubusercontent.com/laibanawaz248/CareerGo/main/Screenshots%20of%20website/Screenshot%202026-07-24%20205410.png" width="800"/>
 
 
 **How to Run This Project Locally**
