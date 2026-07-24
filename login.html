@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerGo | Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar container">
+        <a class="brand" href="index.html">CareerGo</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card-section">
+        <div class="section-heading">
+          <p class="eyebrow">Welcome Back</p>
+          <h2>Login to CareerGo</h2>
+        </div>
+        <form id="login-form" class="card form-card">
+          <label>
+            Email
+            <input type="email" id="login-email" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="login-password" required />
+          </label>
+          <button class="primary-btn" type="submit">Login</button>
+          <button class="secondary-btn" type="button" id="guest-login">Continue as Guest</button>
+          <p>New here? <a href="signup.html">Create an account</a></p>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      document.getElementById('guest-login').addEventListener('click', function () {
+        localStorage.setItem('currentUser', JSON.stringify({ name: 'Guest', guest: true }));
+        window.location.href = 'index.html';
+      });
+
+      document.getElementById('login-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const email = document.getElementById('login-email').value.trim().toLowerCase();
+        const password = document.getElementById('login-password').value;
+        const users = JSON.parse(localStorage.getItem('users') || '[]');
+        const user = users.find((entry) => entry.email === email && entry.password === password);
+
+        if (!user) {
+          alert('Invalid email or password.');
+          return;
+        }
+
+        localStorage.setItem('currentUser', JSON.stringify({ name: user.name, email: user.email }));
+        window.location.href = 'index.html';
+      });
+    </script>
+  </body>
+</html>

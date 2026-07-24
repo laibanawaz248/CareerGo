@@ -1,0 +1,82 @@
+[
+  {
+    "id": "job-1",
+    "title": "Junior Frontend Developer",
+    "company": "Bright Labs",
+    "location": "Remote",
+    "description": "Build accessible and responsive web interfaces for a growing SaaS platform. Ideal for someone who enjoys turning design ideas into polished product experiences.",
+    "requiredSkills": ["HTML", "CSS", "JavaScript", "Accessibility"]
+  },
+  {
+    "id": "job-2",
+    "title": "Data Analyst Trainee",
+    "company": "Northstar Analytics",
+    "location": "London",
+    "description": "Support the reporting team by cleaning data, building dashboards, and helping stakeholders understand trends.",
+    "requiredSkills": ["Excel", "SQL", "Data Visualization", "Communication"]
+  },
+  {
+    "id": "job-3",
+    "title": "Marketing Coordinator",
+    "company": "GreenWave Studio",
+    "location": "Hybrid",
+    "description": "Coordinate digital campaigns, content scheduling, and audience engagement across social and email platforms.",
+    "requiredSkills": ["Content Creation", "Social Media", "Email Marketing", "Organization"]
+  },
+  {
+    "id": "job-4",
+    "title": "Customer Success Associate",
+    "company": "Orbit Support",
+    "location": "Manchester",
+    "description": "Help customers onboard, answer product questions, and identify expansion opportunities in a fast-paced software company.",
+    "requiredSkills": ["Communication", "Problem Solving", "CRM", "Customer Service"]
+  },
+  {
+    "id": "job-5",
+    "title": "Operations Analyst",
+    "company": "Cedar Logistics",
+    "location": "Birmingham",
+    "description": "Track operational metrics, document workflows, and improve team efficiency with analytical insight.",
+    "requiredSkills": ["Excel", "Process Improvement", "Reporting", "Attention to Detail"]
+  },
+  {
+    "id": "job-6",
+    "title": "UI/UX Design Intern",
+    "company": "Studio Nine",
+    "location": "Remote",
+    "description": "Support the design team through wireframes, prototypes, and user research activities for a mobile app redesign.",
+    "requiredSkills": ["Figma", "Wireframing", "User Research", "Design Thinking"]
+  },
+  {
+    "id": "job-7",
+    "title": "Project Coordinator",
+    "company": "Harbor Consulting",
+    "location": "Edinburgh",
+    "description": "Support project managers with scheduling, documentation, and stakeholder communication for multiple client engagements.",
+    "requiredSkills": ["Organization", "Microsoft Office", "Time Management", "Teamwork"]
+  },
+  {
+    "id": "job-8",
+    "title": "Software QA Engineer",
+    "company": "PixelForge",
+    "location": "Remote",
+    "description": "Review product features, log defects, and contribute to a reliable testing process for web applications.",
+    "requiredSkills": ["Testing", "Bug Tracking", "Analytical Thinking", "Documentation"]
+  },
+  {
+    "id": "job-9",
+    "title": "Social Media Coordinator",
+    "company": "Lumen Media",
+    "location": "Hybrid",
+    "description": "Plan content calendars, create short form posts, and monitor engagement trends for several client brands.",
+    "requiredSkills": ["Social Media", "Copywriting", "Creativity", "Scheduling"]
+  },
+  {
+    "id": "job-10",
+    "title": "Business Analyst Trainee",
+    "company": "Vertex Solutions",
+    "location": "Leeds",
+    "description": "Assist with requirement gathering, process mapping, and documentation for internal digital transformation initiatives.",
+    "requiredSkills": ["Business Analysis", "Documentation", "Stakeholder Communication", "Problem Solving"]
+  }
+]

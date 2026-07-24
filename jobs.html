@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerGo | Jobs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar container">
+        <a class="brand" href="index.html">CareerGo</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card-section">
+        <div class="section-heading">
+          <p class="eyebrow">Explore Opportunities</p>
+          <h2>Browse jobs and get AI feedback</h2>
+          <p>Use your saved profile to see how well each role fits your background.</p>
+        </div>
+        <div id="jobs-list" class="jobs-grid"></div>
+      </section>
+    </main>
+
+    <script src="js/ai.js"></script>
+    <script src="js/jobs.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const currentUser = JSON.parse(localStorage.getItem('currentUser') || 'null');
+        if (!currentUser) {
+          alert('Please log in or continue as guest to view jobs.');
+          window.location.href = 'login.html';
+        }
+      });
+    </script>
+  </body>
+</html>

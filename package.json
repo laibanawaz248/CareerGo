@@ -1,0 +1,9 @@
+{
+  "name": "careergo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CareerGo is a vanilla HTML, CSS, and JavaScript final-project app with a Vercel serverless AI endpoint.",
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}

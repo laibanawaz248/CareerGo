@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerGo | Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar container">
+        <a class="brand" href="index.html">CareerGo</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="login.html">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card-section">
+        <div class="section-heading">
+          <p class="eyebrow">Create Account</p>
+          <h2>Sign up for CareerGo</h2>
+        </div>
+        <form id="signup-form" class="card form-card">
+          <label>
+            Name
+            <input type="text" id="signup-name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" id="signup-email" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="signup-password" required />
+          </label>
+          <label>
+            Confirm Password
+            <input type="password" id="signup-confirm" required />
+          </label>
+          <button class="primary-btn" type="submit">Sign Up</button>
+          <button class="secondary-btn" type="button" id="guest-signup">Continue as Guest</button>
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      document.getElementById('guest-signup').addEventListener('click', function () {
+        localStorage.setItem('currentUser', JSON.stringify({ name: 'Guest', guest: true }));
+        window.location.href = 'index.html';
+      });
+
+      document.getElementById('signup-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById('signup-name').value.trim();
+        const email = document.getElementById('signup-email').value.trim().toLowerCase();
+        const password = document.getElementById('signup-password').value;
+        const confirmPassword = document.getElementById('signup-confirm').value;
+
+        if (!name || !email || !password || !confirmPassword) {
+          alert('Please fill in all fields.');
+          return;
+        }
+
+        if (password !== confirmPassword) {
+          alert('Passwords do not match.');
+          return;
+        }
+
+        const users = JSON.parse(localStorage.getItem('users') || '[]');
+        if (users.some((user) => user.email === email)) {
+          alert('An account with this email already exists.');
+          return;
+        }
+
+        users.push({ name, email, password });
+        localStorage.setItem('users', JSON.stringify(users));
+        alert('Sign up successful. Please log in.');
+        window.location.href = 'login.html';
+      });
+    </script>
+  </body>
+</html>

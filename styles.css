@@ -1,0 +1,302 @@
+:root {
+  color-scheme: light;
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --primary: #3b82f6;
+  --primary-dark: #1d4ed8;
+  --accent: #22c55e;
+  --text: #183153;
+  --muted: #64748b;
+  --border: #dbe7f3;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Tahoma, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 100%);
+  padding-bottom: 3rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.hero-content {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1.3fr 0.8fr;
+  align-items: center;
+  padding: 3rem 0 2rem;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.6rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero-text,
+.section-heading p,
+.card p,
+.footer p {
+  color: var(--muted);
+}
+
+.hero-card,
+.card,
+.tracker-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.hero-card {
+  padding: 1.5rem;
+}
+
+.hero-card ul {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.primary-btn,
+.secondary-btn,
+.action-btn,
+.status-select,
+.small-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: white;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.action-btn:hover,
+.small-btn:hover {
+  transform: translateY(-1px);
+}
+
+.secondary-btn {
+  background: #eef2ff;
+  color: var(--primary-dark);
+}
+
+.action-btn {
+  background: #eff6ff;
+  color: var(--primary-dark);
+}
+
+.small-btn {
+  background: #f8fafc;
+  color: var(--text);
+  padding: 0.55rem 0.8rem;
+}
+
+.card-section {
+  margin-top: 2rem;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.card {
+  padding: 1.25rem;
+}
+
+.form-card {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+input,
+textarea,
+.status-select {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font: inherit;
+  background: #fcfdff;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.jobs-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.job-card {
+  padding: 1.25rem;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.job-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.pill {
+  display: inline-block;
+  background: #eff6ff;
+  color: var(--primary-dark);
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+
+.job-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+
+.loading,
+.error {
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+.loading {
+  color: var(--primary);
+}
+
+.error {
+  color: #dc2626;
+}
+
+.ai-result,
+.cover-letter-box,
+.tracker-item {
+  margin-top: 1rem;
+  padding: 0.95rem 1rem;
+  border-radius: 16px;
+  background: #f8fbff;
+  border: 1px solid #dce8f8;
+}
+
+.result-list {
+  margin: 0.3rem 0 0.7rem;
+  padding-left: 1rem;
+}
+
+.tracker-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.tracker-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 0 2.5rem;
+}
+
+@media (max-width: 760px) {
+  .hero-content,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .job-topline,
+  .tracker-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}

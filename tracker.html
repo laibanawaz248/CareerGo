@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerGo | Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar container">
+        <a class="brand" href="index.html">CareerGo</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card-section">
+        <div class="section-heading">
+          <p class="eyebrow">Step 3</p>
+          <h2>Application tracker</h2>
+          <p>Keep track of jobs you saved or applied to.</p>
+        </div>
+        <div id="tracker-list" class="tracker-list"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const currentUser = JSON.parse(localStorage.getItem('currentUser') || 'null');
+        if (!currentUser) {
+          alert('Please log in or continue as guest to view your tracker.');
+          window.location.href = 'login.html';
+        }
+      });
+    </script>
+  </body>
+</html>

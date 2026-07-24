@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerGo | Find Your First Job</title>
+    <meta
+      name="description"
+      content="CareerGo helps new graduates match their skills to jobs, generate tailored cover letters, and track applications."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar container">
+        <a class="brand" href="#home">CareerGo</a>
+        <div class="nav-links">
+          <a href="#profile-section">Profile</a>
+          <a href="#jobs-section">Jobs</a>
+          <a href="#tracker-section">Tracker</a>
+          <a href="login.html" id="login-link">Login</a>
+          <a href="signup.html" id="signup-link">Sign Up</a>
+          <span id="welcome-user" class="welcome-user"></span>
+          <button id="logout-btn" class="small-btn" style="display:none;">Logout</button>
+        </div>
+      </nav>
+      <div id="home" class="hero-content container">
+        <div>
+          <p class="eyebrow">AI-powered career support for fresh graduates</p>
+          <h1>Turn your background into job-ready opportunities.</h1>
+          <p class="hero-text">
+            CareerGo helps you discover roles you are truly qualified for, generate
+            tailored cover letters, and keep your applications organized.
+          </p>
+          <div class="hero-actions">
+            <button id="get-started" class="primary-btn" type="button">Get Started</button>
+            <button id="guest-start" class="secondary-btn" type="button">Continue as Guest</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>What CareerGo does</h3>
+          <ul>
+            <li>Matches your skills to relevant openings</li>
+            <li>Scores your fit with easy-to-understand feedback</li>
+            <li>Drafts cover letters in one click</li>
+            <li>Tracks applications by stage</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container" style="display: none;">
+      <section id="profile-section" class="card-section">
+        <div class="section-heading">
+          <p class="eyebrow">Step 1</p>
+          <h2>Build your profile</h2>
+          <p>Tell us about your background once, and we will use it for every job.</p>
+        </div>
+
+        <form id="profile-form" class="card form-card">
+          <div class="grid two-col">
+            <label>
+              Your name
+              <input id="name" name="name" type="text" placeholder="Asha Patel" required />
+            </label>
+            <label>
+              Education
+              <input id="education" name="education" type="text" placeholder="B.Sc. Computer Science" required />
+            </label>
+          </div>
+          <label>
+            Skills
+            <input id="skills" name="skills" type="text" placeholder="HTML, CSS, JavaScript, SQL" required />
+          </label>
+          <label>
+            Short bio
+            <textarea id="bio" name="bio" rows="4" placeholder="Recent graduate with a passion for problem solving and web development."></textarea>
+          </label>
+          <button type="submit" class="primary-btn">Save Profile</button>
+        </form>
+      </section>
+
+      <section id="jobs-section" class="card-section">
+        <div class="section-heading">
+          <p class="eyebrow">Step 2</p>
+          <h2>Explore job opportunities</h2>
+          <p>Review sample roles or add your own job description.</p>
+        </div>
+
+        <form id="add-job-form" class="card form-card add-job-card">
+          <div class="grid two-col">
+            <label>
+              Job title
+              <input id="new-title" name="newTitle" type="text" placeholder="Junior Analyst" />
+            </label>
+            <label>
+              Company
+              <input id="new-company" name="newCompany" type="text" placeholder="Bright Labs" />
+            </label>
+          </div>
+          <div class="grid two-col">
+            <label>
+              Location
+              <input id="new-location" name="newLocation" type="text" placeholder="Remote / London" />
+            </label>
+            <label>
+              Required skills
+              <input id="new-skills" name="newSkills" type="text" placeholder="Excel, reporting, communication" />
+            </label>
+          </div>
+          <label>
+            Job description
+            <textarea id="new-description" name="newDescription" rows="4" placeholder="Paste the posting here to add it to your board."></textarea>
+          </label>
+          <button type="submit" class="secondary-btn">Add a Job</button>
+        </form>
+
+        <div id="jobs-list" class="jobs-grid"></div>
+      </section>
+
+      <section id="tracker-section" class="card-section">
+        <div class="section-heading">
+          <p class="eyebrow">Step 3</p>
+          <h2>Application tracker</h2>
+          <p>Keep track of every opportunity you are considering or already applied to.</p>
+        </div>
+        <div id="tracker-list" class="tracker-list"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>CareerGo — built as a final-project MVP with plain HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+      document.getElementById('get-started').addEventListener('click', function () {
+        window.location.href = 'signup.html';
+      });
+
+      document.getElementById('guest-start').addEventListener('click', function () {
+        localStorage.setItem('currentUser', JSON.stringify({ name: 'Guest', guest: true }));
+        updateAuthUI();
+      });
+
+      function updateAuthUI() {
+        const currentUser = JSON.parse(localStorage.getItem('currentUser') || 'null');
+        const loginLink = document.getElementById('login-link');
+        const signupLink = document.getElementById('signup-link');
+        const welcomeUser = document.getElementById('welcome-user');
+        const logoutBtn = document.getElementById('logout-btn');
+        const mainContent = document.querySelector('main.container');
+
+        if (currentUser) {
+          loginLink.style.display = 'none';
+          signupLink.style.display = 'none';
+          welcomeUser.textContent = `Welcome, ${currentUser.name}`;
+          logoutBtn.style.display = 'inline-block';
+          mainContent.style.display = 'block';
+        } else {
+          loginLink.style.display = 'inline';
+          signupLink.style.display = 'inline';
+          welcomeUser.textContent = '';
+          logoutBtn.style.display = 'none';
+          mainContent.style.display = 'none';
+        }
+      }
+
+      document.getElementById('logout-btn').addEventListener('click', function () {
+        localStorage.removeItem('currentUser');
+        updateAuthUI();
+      });
+
+      document.addEventListener('DOMContentLoaded', updateAuthUI);
+    </script>
+  </body>
+</html>
