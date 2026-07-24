@@ -74,31 +74,29 @@ Development environment: Visual Studio Code, Vercel CLI (vercel dev) for local t
 Version control: Git & GitHub
 
 **ScreenShots:**
+**Dashboard screenshot / Home Page**
+![Home Page](Screenshots%20of%20website/home.png)
 
-Screenshot 2026-07-24 204632.png
-Add website screenshots
-16 minutes ago
-Screenshot 2026-07-24 205038.png
-Add website screenshots
-16 minutes ago
-Screenshot 2026-07-24 205112.png
-Add website screenshots
-16 minutes ago
-Screenshot 2026-07-24 205158.png
-Add website screenshots
-16 minutes ago
-Screenshot 2026-07-24 205231.png
-Add website screenshots
-16 minutes ago
-Screenshot 2026-07-24 205302.png
-Add website screenshots
-16 minutes ago
-Screenshot 2026-07-24 205349.png
-Add website screenshots
-16 minutes ago
-Screenshot 2026-07-24 205435.png
-Add website screenshots
-16 minutes ago
+ **Sign Up**
+![Sign Up](Screenshots%20of%20website/signup.png)
+
+ **Login**
+![Login](Screenshots%20of%20website/login.png)
+
+ **Build Profile**
+![Build Profile](Screenshots%20of%20website/profile.png)
+
+ **Explore Jobs**
+![Explore Jobs](Screenshots%20of%20website/explore-jobs.png)
+
+ **Job Details**
+![Job Details](Screenshots%20of%20website/job-details.png)
+
+ **Fit Score & Cover Letter**
+![Fit Score](Screenshots%20of%20website/fit-coverletter.png)
+
+ **Application Tracker**
+![Tracker](Screenshots%20of%20website/tracker.png)
 
 
 
