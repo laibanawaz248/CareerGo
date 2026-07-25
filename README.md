@@ -7,6 +7,16 @@ CareerGo AI is a web app that helps fresh graduates figure out which jobs they'r
 
 🔗Live Site URL: https://career-go-whnb.vercel.app/
 
+**How to open my website**
+
+After Clicking vercel public link of my website that present above in Live Site URL. 
+
+Click on Get Started or Continue as a guest(After that You will be able to scroll down my website.) 
+
+After click get started you will be able to SignUp & Sign In or  Continue as a guest.After that You will be able to scroll down my website & See Next pages.
+
+Otherwise you see only Dashboard screen.
+
 
 **The Problem & Solution**
 
