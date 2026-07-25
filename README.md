@@ -170,7 +170,7 @@ Open a **terminal**inside the project directory:
 npm install -g vercel
 vercel dev
 
-This starts a local server (usually at http://localhost:3000) where both the static frontend and the /api/ai serverless function work exactly as they will in production.
+This starts a local server where both the static frontend and the /api/ai serverless function work exactly as they will in production.
 
 **Step 4: Pushing to GitHub**
 
@@ -192,16 +192,16 @@ git add .
 
 git commit -m "connect local and github"
 
-Create a**new repository on github.com,** then run:
+Create a**new repository on** https://github.com/ then run:
 
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/careergo-ai.git
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/careergo.git
 git branch -M main
 git push -u origin main
 
 **Step 5: Deploy to Vercel**
 
 Log in to Vercel (
-https://vercel.com › login)
+https://vercel.com )
 
 Click **Add New > Project** and import your careergo-ai GitHub repository.
 
